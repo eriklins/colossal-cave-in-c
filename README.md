@@ -2,7 +2,7 @@
 
 Will Crowther created Colossal Cave Adventure in 1976 in FORTRAN IV on a PDP-10. This is a faithful recreation in C based on the faithful recreation in C++ by Anthony Hay. Here is Anthony's [repo](https://github.com/anthay/advent.cpp).
 
-## Below is from Anthony's repo:
+## Below is from Anthony's repo
 
 
 Here is an example play...
@@ -115,7 +115,7 @@ I made a [map](https://github.com/anthay/advent.cpp/blob/master/doc/ColossalCave
 
 ### To build and run Adventure
 
-Note that the whole of Adventure is in the one file [advf4_77-03-31.cpp](https://github.com/anthay/advent.cpp/blob/master/src/advf4_77-03-31.cpp).
+Note that the whole of Adventure is in the one file [advent.c](https://github.com/eriklins/colossal-cave-in-c/blob/main/src/advent.c).
 
 POSIX (e.g. macOS):
 
