@@ -1,15 +1,18 @@
-# advent.cpp
+# Colossal Cave Adventure in C
 
-Will Crowther created Colossal Cave Adventure in 1976 in FORTRAN IV on a PDP-10. This is a faithful recreation in C++. Here are his [code](https://github.com/anthay/advent.cpp/blob/main/doc/advf4.77-03-31.txt) and [data](https://github.com/anthay/advent.cpp/blob/main/doc/advdat.77-03-31.txt) files.
+Will Crowther created Colossal Cave Adventure in 1976 in FORTRAN IV on a PDP-10. This is a faithful recreation in C based on the faithful recreation in C++ by Anthony Hay. Here is Anthony's [repo](https://github.com/anthay/advent.cpp).
+
+## Below is from Anthony's repo:
+
 
 Here is an example play...
 
 ```text
 -----------------------------------------------------------------
      Will Crowther's original 1976 "Colossal Cave Adventure"
-               A faithful reimplementation in C++
-         by Anthony Hay, 2024  (CC0 1.0) Public Domain
-              https://github.com/anthay/advent.cpp
+               A faithful reimplementation in C
+          by Erik Lins, 2025  (CC0 1.0) Public Domain          
+          (based on Anthony Hay's C++ version, 2024)
 -----------------------------------------------------------------
 To quit hit Ctrl-C
 
@@ -114,17 +117,9 @@ I made a [map](https://github.com/anthay/advent.cpp/blob/master/doc/ColossalCave
 
 Note that the whole of Adventure is in the one file [advf4_77-03-31.cpp](https://github.com/anthay/advent.cpp/blob/master/src/advf4_77-03-31.cpp).
 
-POSIX (e.g. macOS) (I used Apple clang version 15.0.0 that came with Xcode):
+POSIX (e.g. macOS):
 
 ```text
-clang++ -std=c++20 -pedantic -o advent advf4_77-03-31.cpp
+cc -std=c99 -Wall -Wextra advent.c -o advent_c
 ./advent
 ```
-
-Windows (I used Microsoft Visual Studio 2019 Community Edition Command Prompt):
-
-```text
-cl /EHsc /W4 /std:c++20 /Fe:advent advf4_77-03-31.cpp
-advent
-```
-
